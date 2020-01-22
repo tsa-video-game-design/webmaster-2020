@@ -9,6 +9,49 @@
 	padding-left: 0.5em;
 	line-height: 2em;
 }
+#nav-expanded {
+	text-decoration:none;
+	list-style-type: none;
+	font-family:Arial;
+	background-color: white;
+	margin: 0;
+	position: fixed;
+	top: 2.4em;
+	left: 0;
+	width: 100%;
+	font-size: 1.5em;
+	width: 40%;
+	min-width: 5em;
+	height: 100%;
+	padding-left: 1em;
+	padding-top: 0.8em;
+	--right-padding: 3em;
+	padding-right: var(--right-padding);
+	clip-path: polygon(0 0, 100% 0, calc(100% - var(--right-padding)) 100%, 0 100%);
+}
+#nav-expanded li {
+	display: inline-block;
+	margin-bottom: 0.5em;
+	color: #777;
+	transition: 0.2s;
+	width: fit-content;
+}
+#nav-expanded li:after {
+	content: ".";
+	display: block;
+	width: 0%;
+	font-size: 0.05em;
+	background-color: black;
+	color: black;
+	transition: 0.5s;
+}
+#nav-expanded li:hover::after {
+	width: 100%;
+}
+#nav-expanded li:hover {
+	color: black;
+
+}
 body {
 	background-color: aqua;
 }
