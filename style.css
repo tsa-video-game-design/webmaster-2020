@@ -40,6 +40,10 @@
 	transition: 0.2s;
 	width: fit-content;
 }
+#nav-expanded li:hover {
+	color: black;
+	cursor: pointer;
+}
 #nav-expanded li:after {
 	content: ".";
 	display: block;
@@ -52,10 +56,7 @@
 #nav-expanded li:hover::after {
 	width: 100%;
 }
-#nav-expanded li:hover {
-	color: black;
-	cursor: pointer;
-}
+
 #nav-shade {
 	background-color: black;
 	opacity: 0;
@@ -67,6 +68,7 @@
 	top: 0;
 	padding: 0;
 	left: 0;
+	z-index: 999999999
 }
 .video-background-container {
 	display: block;
@@ -101,4 +103,33 @@ body {
 	margin: 0;
 	padding-top: 3em;
 	background-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		color: white;
+		background-color: black;
+	}
+	#nav {
+		background-color: black;
+	}
+	#nav-expanded {
+		background-color: black;
+	}
+	#nav-expanded li {
+		color: #888;
+	}
+	#nav-expanded li:hover {
+		color: white;
+	}
+	#nav-expanded li:after {
+		background-color: white;
+		color: white;
+	}
+	#nav-expanded li:hover::after {
+		width: 100%;
+	}
+	.content-text {
+		background-color: black;
+	}
 }
