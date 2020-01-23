@@ -69,13 +69,10 @@
 	left: 0;
 }
 .video-background-container {
-	--height: 200px;
 	display: block;
 	position:relative;
-	height: var(--height);
 }
 .video-background-container video {
-	position: fixed;
 	top:3em;
 	width: 100%;
 	clip-path: url(#tsaLogo);
