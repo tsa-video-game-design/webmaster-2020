@@ -44,7 +44,7 @@
 	content: ".";
 	display: block;
 	width: 0%;
-	font-size: 0.05em;
+	font-size: 2px;
 	background-color: black;
 	color: black;
 	transition: 0.5s;
@@ -68,7 +68,33 @@
 	padding: 0;
 	left: 0;
 }
+.video-background-container {
+	--height: 200px;
+	display: block;
+	position:relative;
+	height: var(--height);
+}
+.video-background-container video {
+	position: fixed;
+	top:3em;
+	width: 100%;
+	clip-path: url(#tsaLogo);
+	transform: scale(0.8);
+}
+
+.clip_path {
+	position: fixed;
+}
+
+.content-text {
+	position: absolute;
+	z-index: 9999999;
+	background-color:white;
+	padding: 1em;
+}
+
 body {
+	margin: 0;
 	padding-top: 3em;
 	background-color: white;
 }
