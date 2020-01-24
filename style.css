@@ -105,7 +105,15 @@
 	grid-template-rows: 1fr;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
-	margin-top: 2em;
+	margin-top: 1em;
+}
+.content-heading {
+	text-align: center;
+	display: block;
+	width: 100%;
+	font-family: 'Teko', sans-serif;
+	font-weight: normal;
+	margin-bottom: 0em;
 }
 .column i {
 	font-size: 3em;
@@ -138,6 +146,10 @@ body {
 	margin: 0;
 	padding-top: 3em;
 	background-color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Teko', sans-serif;
+	font-weight: normal;
 }
 
 @media (prefers-color-scheme: dark) {
