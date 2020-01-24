@@ -82,8 +82,8 @@
 }
 .video-background-container h1 {
 	text-align: center;
-	font-family: Arial, sans-serif;
-	font-weight: bold;
+	font-family: 'Teko', sans-serif;
+	font-weight: normal;
 	margin: 0;
 	margin-top: 0em;
 }
@@ -94,9 +94,44 @@
 
 .content-text {
 	position: absolute;
+	font-family: 'Muli', sans-serif;
 	z-index: 9999999;
 	background-color:white;
 	padding: 1em;
+}
+.three-col-pane {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	margin-top: 2em;
+}
+.column i {
+	font-size: 3em;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+.column .column-number {
+	font-family: 'Teko', sans-serif;
+	font-weight: 300;
+	font-size: 2.5em;
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+}
+.column .column-flavortext {
+	margin: 0;
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-family: 'Teko', sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
+	position: relative;
+	top: -15px;
 }
 
 body {
