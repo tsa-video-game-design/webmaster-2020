@@ -13,6 +13,17 @@
         top: -10px
     }
 }
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 .floating-down-arrow {
     --size: 10px;
     border: 2px solid white;
@@ -53,7 +64,7 @@
 }
 .content-quote {
     width: 60%;
-    min-width: 400px;
+    min-width: 200px;
     margin-left: auto;
 }
 .content-quote::before {
@@ -72,6 +83,73 @@
     margin-top: 1em;
     display: block;
 }
+.content-pane-2 {
+    position: relative;
+}
+.content-pane-2 .main-image {
+    content: url("car_detail.jpg");
+    width: 100%;
+}
+.hotspot {
+    /* FIX THE POSITION RESPONSIVITY */
+    font-size: 3em;
+    color: #00d8ff;
+    text-shadow: 0px 0px 10px #007eff;
+    position: absolute;
+    cursor: pointer;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    line-height: 0.5em;
+}
+.hotspot-1 {
+    left: 41.7%;
+    top: 41.2%;
+}
+.hotspot-2 {
+    left: 63%;
+    top: 57.8%;
+}
+.hotspot-3 {
+    left: 36%;
+    top: 31%;
+}
+.hotspot-4 {
+    left: 79.5%;
+    top: 64%;
+}
+.hotspot-5 {
+    left: 22%;
+    top: 63%;
+}
+
+@media (max-width: 466px) {
+    body {
+        color: orange;
+    }
+    .hotspot-1 {
+        left: 38.7%;
+        top: 39.2%;
+    }
+    .hotspot-2 {
+        left: 61%;
+        top: 53.8%;
+    }
+    .hotspot-3 {
+        left: 34%;
+        top: 28%;
+    }
+    .hotspot-4 {
+        left: 76.5%;
+        top: 62%;
+    }
+    .hotspot-5 {
+        left: 20%;
+        top: 61%;
+    }
+}
+
 html, body {
     height: calc(100% - 1.5em);
 }
@@ -80,4 +158,10 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: 0% 50%;
+}
+@media (prefers-color-scheme: dark) {
+    .content-pane-2 .main-image {
+        content: url("car_detail_dark.jpg");
+    }
+
 }
