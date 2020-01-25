@@ -1,0 +1,83 @@
+.image-splash {
+    width: 100%;
+    height: 100%;
+}
+@keyframes vertical-float {
+    0% {
+        top: -10px;
+    }
+    50% {
+        top: 0px;
+    }
+    100% {
+        top: -10px
+    }
+}
+.floating-down-arrow {
+    --size: 10px;
+    border: 2px solid white;
+    border-top: none;
+    border-right: none;
+    width: var(--size);
+    height: var(--size);
+    color: rgba(0,0,0,0);
+    margin: 0 auto;
+    transform: rotate(-45deg);
+    position: relative;
+    animation-name: vertical-float;
+    animation-delay: 1.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+.centered-title {
+    height: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.centered-title h1 {
+    line-height: 0.9em;
+    font-size: 5em;
+    margin: 0;
+    text-align: center;
+}
+.centered-title h3 {
+    margin: 0;
+    text-align: center;
+}
+.content-pane-1 {
+    background-color: rgba(0,0,0,0.7);
+    padding-top: 3em;
+    padding-bottom: 3em;
+    font-family: 'Muli', sans-serif;
+}
+.content-quote {
+    width: 60%;
+    min-width: 400px;
+    margin-left: auto;
+}
+.content-quote::before {
+    content: "“";
+    position: absolute;
+    font-size: 30em;
+    line-height: 0.9em;
+    margin-top: -70px;
+    margin-left: -70px;
+    z-index: 0;
+    color: rgba(255,255,255,0.3);
+    pointer-events: none;
+}
+.content-quote .author {
+    margin-left: 3em;
+    margin-top: 1em;
+    display: block;
+}
+html, body {
+    height: calc(100% - 1.5em);
+}
+body {
+    background-image: url(car_bg_darkened.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0% 50%;
+}
