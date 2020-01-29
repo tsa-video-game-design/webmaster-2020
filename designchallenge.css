@@ -105,6 +105,35 @@
     animation-timing-function: linear;
     line-height: 0.5em;
 }
+.hover-tooltip {
+    position: fixed;
+    white-space: nowrap;
+    z-index: 99999999999999;
+    color: black;
+    background-color: rgba(0,216,255,0.9);
+    box-shadow: 0px 0px 10px rgba(0,126,255,0.5);
+    padding: 0.2em;
+    font-size: 0.8em;
+    font-weight: bold;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+    display: none;
+    pointer-events: none;
+}
+.hover-tooltip h1 {
+    font-size: 1em;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+.hover-tooltip .tooltip-info {
+    white-space:normal;
+    width: auto;
+    width: 200px;
+    font-weight: normal;
+    font-size: 0.9em;
+    font-style: italic;
+}
 /*
 .hotspot-1 {
     left: 41.7%;

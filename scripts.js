@@ -1,5 +1,6 @@
 window.onload = function() {
     setupNavigationControls();
+    setupHoverTooltip();
 };
 function setupNavigationControls() {
     menuShowing = false;
@@ -31,5 +32,22 @@ function setupNavigationControls() {
             },animation_speed);
             menuShowing = true;
         }
+    });
+}
+function setupHoverTooltip() {
+    window.onmousemove = function(e) {
+        var target = document.getElementsByClassName("hover-tooltip")[0];
+        if (e.clientX > (document.body.clientWidth - target.clientWidth)) {
+            target.style.left = (document.body.clientWidth - target.clientWidth + 1) + "px";
+        } else {
+            target.style.left = e.clientX+"px";
+        }
+        target.style.top = (e.clientY - target.clientHeight - 5)+"px";
+    }
+    $(".hotspot").on("mouseenter", function(e) {
+        $(".hover-tooltip").show();
+    });
+    $(".hotspot").on("mouseout", function(e) {
+        $(".hover-tooltip").hide();
     });
 }
