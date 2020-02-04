@@ -34,7 +34,7 @@
 	clip-path: polygon(0 0, 100% 0, calc(100% - var(--right-padding)) 100%, 0 100%);
 }
 #nav-expanded li {
-	display: inline-block;
+	display: block;
 	margin-bottom: 0.5em;
 	color: #777;
 	transition: 0.2s;
