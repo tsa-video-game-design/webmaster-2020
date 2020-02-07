@@ -250,6 +250,7 @@
     margin-left: calc(10% + 1em);
     width: calc(90% - 1em);
     text-align: center;
+    color: white;
     height: 600px;
     padding-top: 150px;
 }
@@ -257,11 +258,13 @@
 .road-promo-section-1 .text h2 {
     margin-bottom: 0px;
     line-height: 0.9em;
+    color: white;
 }
 
 .road-promo-section-1 .text h6 {
-font-size: 0.5em;
-margin-top: 0px;
+    font-size: 0.5em;
+    margin-top: 0px;
+    color: white;
 }
 
 .road-promo-section-1-bar-1 {
