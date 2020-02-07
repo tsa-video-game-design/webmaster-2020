@@ -24,6 +24,24 @@
         transform: rotate(360deg);
     }
 }
+
+#nav {
+    padding: 0;
+    padding-top: 0;
+}
+
+#hamburger-btn {
+    margin: 0.5em;
+    margin-top: 0em;
+}
+
+.nav-logo {
+    height: 70%;
+    position: absolute;
+    right: 0.5em;
+    top: 15%;
+}
+
 .floating-down-arrow {
     --size: 10px;
     border: 2px solid white;
@@ -387,10 +405,10 @@ margin-top: 0px;
         display: none;
     }
     .centered-title .logo-hero {
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 15%;
+        margin-right: 15%;
     }
 }
 
