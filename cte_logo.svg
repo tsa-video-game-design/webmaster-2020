@@ -1,0 +1,32 @@
+<svg id="CTE" xmlns="http://www.w3.org/2000/svg" width="1821.06" height="708.938" viewBox="0 0 1821.06 708.938">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        stroke-width: 150px;
+      }
+
+      .cls-2 {
+        stroke-width: 140px;
+      }
+    </style>
+  </defs>
+  <path id="C" class="cls-1" d="M602.488,780.557a278.435,278.435,0,0,1-196.11,80.424C252.08,860.981,127,735.853,127,581.5S252.08,302.019,406.378,302.019a278.412,278.412,0,0,1,194.78,79.122" transform="translate(-52 -227.031)"/>
+  <g id="T">
+    <path class="cls-2" d="M786.954,309.061H1259.48" transform="translate(-52 -227.031)"/>
+    <path class="cls-2" d="M1020.14,853.939V313.462" transform="translate(-52 -227.031)"/>
+  </g>
+  <g id="E">
+    <path class="cls-2" d="M1438.94,311.014h364.12" transform="translate(-52 -227.031)"/>
+    <path id="Shape_1_copy" data-name="Shape 1 copy" class="cls-2" d="M1438.94,856.014h364.12" transform="translate(-52 -227.031)"/>
+    <path id="Shape_1_copy_2" data-name="Shape 1 copy 2" class="cls-2" d="M1463.52,581.327h165.25" transform="translate(-52 -227.031)"/>
+    <path class="cls-2" d="M1439.08,855.892V315.416" transform="translate(-52 -227.031)"/>
+  </g>
+</svg>
