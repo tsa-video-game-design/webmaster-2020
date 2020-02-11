@@ -6,9 +6,10 @@
             let sensor = new Accelerometer();
             sensor.start();
             sensor.onreading = () => {
-                document.write("Acceleration along X-axis: " + sensor.x);
-                document.write("Acceleration along Y-axis: " + sensor.y);
-                document.write("Acceleration along Z-axis: " + sensor.z);
+                document.write("<br>Acceleration along X-axis: " + sensor.x);
+                document.write("<br>Acceleration along Y-axis: " + sensor.y);
+                document.write("<br>Acceleration along Z-axis: " + sensor.z);
+                document.write("<br><br><br>");
             }
 
         };
