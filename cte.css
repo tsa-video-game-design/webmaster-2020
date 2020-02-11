@@ -1,3 +1,17 @@
+.intro-hero-bg {
+    position: absolute;
+    height: 100%;
+    z-index: -5;
+    opacity: 0;
+}
+.intro-hero-bg img {
+    height: 100%;
+    position: absolute;
+    transform: scale(1.1);
+}
+.intro-hero {
+    position: relative;
+}
 .hero-logo {
     width: 80vw;
     margin-left: 10%;
@@ -20,15 +34,53 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     width: 100%;
-    height: 30px;
+    background-color: #46a2b9;
 }
 .quote-author-img {
     width: 100%;
     clip-path: url(#authorClipPath)
+
 }
+
+.author-img-container {
+    background-color: #46a2b9;
+}
+
 .author-img-container svg {
     position: fixed;
 }
+.quote-author-text {
+    background-color: #46a2b9;
+    padding: 1em;
+}
+.quote-attribution {
+    font-family: 'Muli', sans-serif;
+    padding-top: 1em;
+    font-style: italic;
+    font-weight: bold;
+}
 .quote-body-text {
     font-family: 'Muli', sans-serif;
+}
+
+.resources-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.resources-tile img {
+    width: 5em;
+    max-height: 5em;
+    margin-left: calc( ( 100% - 5em ) / 2);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.resources-tile .fas {
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
