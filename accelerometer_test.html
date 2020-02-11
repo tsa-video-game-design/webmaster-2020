@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <script>
+        window.onload = function() {
+            let sensor = new Accelerometer();
+            sensor.start();
+            sensor.onreading = () => {
+                document.write("Acceleration along X-axis: " + sensor.x);
+                document.write("Acceleration along Y-axis: " + sensor.y);
+                document.write("Acceleration along Z-axis: " + sensor.z);
+            }
+
+        };
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
