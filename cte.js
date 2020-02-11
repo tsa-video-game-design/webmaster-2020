@@ -5,6 +5,14 @@ window.onload = function() {
             opacity: 0.7
         },1000);
     },1700);
+
+    let sensor = new Accelerometer();
+    sensor.start();
+    sensor.onreading = () => {
+        console.log("Acceleration along X-axis: " + sensor.x);
+        console.log("Acceleration along Y-axis: " + sensor.y);
+        console.log("Acceleration along Z-axis: " + sensor.z);
+    }
 };
 window.onmousemove = function(e) {
     var setOffset = function(selector,left,top) {
@@ -13,7 +21,6 @@ window.onmousemove = function(e) {
 
     var Xdistance = -(1 - e.clientX / window.innerWidth);
     var Ydistance = (e.clientY / window.innerHeight);
-    console.log(Ydistance);
     setOffset(".bg1",Xdistance * 20,Ydistance * 20);
     setOffset(".bg2",Xdistance * 15,Ydistance * 15);
     setOffset(".bg3",Xdistance * 10,Ydistance * 10);
