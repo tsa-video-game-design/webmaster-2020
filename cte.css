@@ -11,6 +11,7 @@
 }
 .intro-hero {
     position: relative;
+    overflow: hidden;
 }
 .hero-logo {
     width: 80vw;
@@ -62,7 +63,11 @@
 .quote-body-text {
     font-family: 'Muli', sans-serif;
 }
+.resources-header {
+    font-size: 2.5em;
+    text-align:center;
 
+}
 .resources-wrapper {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -83,4 +88,71 @@
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+.resources-tile h1 {
+    margin: 0;
+    font-family: 'Muli', sans-serif;;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+    min-height: 2.5em;
+    padding: 1em;
+    box-sizing: border-box;
+    padding-bottom: 0.1em;
+    margin-bottom: 0.1em;
+}
+.resources-tile .description {
+    font-family: 'Muli', sans-serif;
+    padding: 2em;
+    padding-top: 1em;
+}
+
+.cte-clubs {
+    background-color:aqua;
+}
+.club-tiles {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+}
+.club-tile-img {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+.club-tile h1 {
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 0;
+}
+.tile-1-theme {
+    color: #ff0000;
+}
+.tile-2-theme {
+    color: #3d9dff;
+}
+.tile-3-theme {
+    color: #00b727;
+}
+
+
+
+@media (max-width: 520px) {
+    .resources-header {
+        font-size: 3.7em;
+    }
+    .resources-wrapper {
+        display: block;
+    }
+    .resources-tile h1 {
+        min-height: none;
+        font-size: 2.2em;
+        padding: 1em;
+        box-sizing: border-box;
+    }
 }
