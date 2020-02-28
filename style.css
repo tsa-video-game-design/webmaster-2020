@@ -107,7 +107,7 @@
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
 	grid-template-rows: 1fr;
-	grid-column-gap: 0px;
+	grid-column-gap: 10px;
 	grid-row-gap: 0px;
 	margin-top: 1em;
 }
@@ -118,12 +118,32 @@
 	font-family: 'Teko', sans-serif;
 	font-weight: normal;
 	margin-bottom: 0em;
+	margin-top: 1.3em;
+}
+.bazaar-promo {
+	background-image: url(tile_bazaar_bg.png);
+	background-size: contain;
+	height: 200px;
+	padding-right: 1rem;
+	margin: -1rem;
+	margin-top: 1rem;
+}
+.bazaar-promo-img {
+	height: 100%;
+	float:left;
+}
+.bazaar-info h1 {
+	padding-top: 0.5em;
+}
+.bazaar-info {
+	font-size: 0.8em;
 }
 .column i {
 	font-size: 3em;
 	text-align: center;
 	display: block;
 	width: 100%;
+	margin-bottom: 0.2em;
 }
 .column .column-number {
 	font-family: 'Teko', sans-serif;
@@ -133,6 +153,7 @@
 	width: 100%;
 	text-align: center;
 	margin: 0;
+	line-height: 0.9em;
 }
 .column .column-flavortext {
 	margin: 0;
@@ -143,11 +164,13 @@
 	font-weight: 300;
 	font-size: 1.5em;
 	position: relative;
-	top: -15px;
+}
+.smaller-text {
+	font-size: 1.1em !important;
 }
 .wide-image-promo {
 	margin: -1em;
-	margin-top: 2em;
+	margin-top: 1em;
 	height: 20em;
 	background-image: url(car_bg.jpg);
 	background-size: cover;
@@ -225,5 +248,17 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	.content-text {
 		background-color: black;
+	}
+}
+@media (max-width: 520px) {
+	.bazaar-promo-img {
+		display:none;
+	}
+	.bazaar-promo {
+		padding: 1rem;
+		padding-top: 0rem;
+	}
+	.bazaar-info {
+		font-size: 0.9em;
 	}
 }
