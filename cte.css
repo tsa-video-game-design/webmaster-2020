@@ -29,18 +29,23 @@
 
 
 .quote-tile {
-    display: grid;
-    grid-template-columns: 30% auto;
-    grid-template-rows: auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    width: 100%;
     background-color: #46a2b9;
+}
+.quote-tile h1 {
+    margin-left: 2rem;
+    margin-bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 0;
 }
 .quote-author-img {
     width: 100%;
     clip-path: url(#authorClipPath)
 
+}
+.teacher-info {
+    font-family: 'Muli', sans-serif;
+    padding: 2rem;
+    padding-top: 1rem;
 }
 
 .author-img-container {
