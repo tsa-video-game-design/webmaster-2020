@@ -121,6 +121,7 @@
 	margin-top: 1.3em;
 }
 .bazaar-promo {
+	color: white;
 	background-image: url(tile_bazaar_bg.png);
 	background-size: contain;
 	height: 200px;

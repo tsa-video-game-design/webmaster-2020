@@ -132,7 +132,7 @@
 .content-pane-2 .intro-texts h3 {
     margin: 0;
     font-size: 0.8em;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Muli', sans-serif;
 }
 .hotspot {
     /* FIX THE POSITION RESPONSIVITY */
@@ -220,7 +220,7 @@
 }
 .road-promo {
     min-height: 100%;
-    background-image: url(road-promo-dark.jpg);
+    /*background-image: url(road-promo-dark.jpg);*/
     background-size: cover;
     background-attachment: fixed;
 }
@@ -242,6 +242,9 @@
 
 .road-promo-section-1 {
     height: 600px;
+    background-image: url(road-promo-dark.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .road-promo-section-1 .text {
@@ -252,7 +255,13 @@
     text-align: center;
     color: white;
     height: 600px;
-    padding-top: 150px;
+    padding-top: 50px;
+}
+
+.road-promo-section-1 .text h6 {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.3rem;
+    padding: 2rem;
 }
 
 .road-promo-section-1 .text h2 {
@@ -290,7 +299,24 @@
 
 .section-4 {
     background-image: url(ai_dark.jpg);
+    z-index: 5;
     /* https://pixabay.com/illustrations/processor-cpu-computer-chip-board-2217771/ */
+}
+.section-5 {
+    min-height: 400px;
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+}
+.section-5 .bar-1 {
+    z-index: 4;
+}
+.section-5 .bar-2 {
+    display: none;
+}
+.section-5-video {
+    position: absolute;
+    width: 100%;
+    z-index: -5;
 }
 
 .road-promo-hex {

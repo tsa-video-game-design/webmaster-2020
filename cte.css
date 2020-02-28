@@ -24,11 +24,12 @@
     width: 60vw;
     margin-left: 20vw;
     position: relative;
-    top: -80px;
+    top: -10vw;
 }
 
 
 .quote-tile {
+    overflow:hidden;
     background-color: #46a2b9;
 }
 .quote-tile h1 {
@@ -36,6 +37,7 @@
     margin-bottom: 0;
     padding-top: 1em;
     padding-bottom: 0;
+    margin-top: 0rem;
 }
 .quote-author-img {
     width: 100%;
@@ -79,6 +81,7 @@
     grid-template-rows: repeat(2,1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    box-sizing: border-box;
 }
 .resources-tile img {
     width: 5em;
@@ -147,7 +150,7 @@
 
 
 
-@media (max-width: 520px) {
+@media (max-width: 590px) {
     .resources-header {
         font-size: 3.7em;
     }
